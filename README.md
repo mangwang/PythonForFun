@@ -2,4 +2,8 @@
 
 This repo contains some funny exercises and notebooks programmed by Python.
 
-Author: Mang Wang
+1. Unix-like tail command: see Jupyter Notebook unixLikeTail.ipynb
+
+
+
+@author: Mang Wang
