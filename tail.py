@@ -13,7 +13,7 @@ Mandatory arguments to long options are mandatory for short options too.
                 or use -n +K to output starting with the Kth line
 
 -----------------------------------
-Created on Mon Jan 25
+Created on Mon Jan 25, 2016
 @author: mangwang
 -----------------------------------
 """
@@ -118,7 +118,7 @@ def tail(fileName, showLines=10, fromLine=None):
                     counter += 1
                     if counter > nLines - showLines:
                         print(line, end='')
-    except IOError, msg:
+    except IOError as msg:
         print(msg, file=sys.stderr)
         sys.exit(2)
 
