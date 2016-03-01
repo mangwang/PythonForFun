@@ -103,7 +103,11 @@ def main():
     for i in range(len(times)):
         plt.loglog(N, times[i], lineStyle[i], label=algoName[i])
     plt.legend(loc=2)
+    plt.title('log-log plot of average running time')
+    plt.xlabel('N')
+    plt.ylabel('Average Running Time')
     plt.grid('on')
+    plt.show()
 
 
 if __name__ == "__main__":
