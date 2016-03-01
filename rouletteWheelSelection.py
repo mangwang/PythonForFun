@@ -13,12 +13,12 @@ Created on Mon Feb 29, 2016
 """
 
 
+from __future__ import division
 import random
 from bisect import bisect_left
 import numpy as np
 import timeit
 import matplotlib.pyplot as plt
-
 
 """
 Basic roulette wheel selection: O(N)
