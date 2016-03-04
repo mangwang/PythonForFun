@@ -35,7 +35,7 @@ def basic(fitness):
     accumulator = 0.0
     for ind, val in enumerate(fitness):
         accumulator += val
-        if accumulator > rndPoint:
+        if accumulator >= rndPoint:
             return ind
 
 
@@ -75,7 +75,7 @@ def stochasticAccept(fitness):
         # randomly select an individual with uniform probability
         ind = int(N * random.random())
         # with probability wi/wmax to accept the selection
-        if random.random() < fitness[ind] / maxFit:
+        if random.random() <= fitness[ind] / maxFit:
             return ind
 
 
